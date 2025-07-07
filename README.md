@@ -1,1 +1,1 @@
-# -genomics-fastqc
+# genomics-fastqc
