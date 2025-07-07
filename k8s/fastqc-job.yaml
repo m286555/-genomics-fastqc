@@ -1,0 +1,13 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: fastqc-job
+spec:
+  template:
+    spec:
+      containers:
+      - name: fastqc
+        image: biocontainers/fastqc:v0.11.9_cv8
+        command: ["fastqc", "--version"]
+      restartPolicy: Never
+
